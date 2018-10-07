@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Acme.Common;
+using static Acme.Common.LoggingService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ namespace Acme.Biz
     {
         public Product()
         {
+            this.ProductVendor = new Vendor();
             Console.WriteLine("Product instance created");
         }
 
@@ -51,8 +54,24 @@ namespace Acme.Biz
             set { productId = value; }
         }
 
+        private Vendor productVendor;
+
+        public Vendor ProductVendor
+        {
+            get { return productVendor; }
+            set { productVendor = value; }
+        }
+
         public string SayHello()
         {
+            var vendor = new Vendor();
+            vendor.SendWelcomeEmail("Message from SayHello");
+
+            var emailService = new EmailService();
+            var confirmation = emailService.SendMessage("New Product", this.productName, "sales@abc.com");
+
+            var result = LogAction("saying Hello");
+
             return "Hello " + ProductName + " (" + ProductId + "): " + Description;
         }
 

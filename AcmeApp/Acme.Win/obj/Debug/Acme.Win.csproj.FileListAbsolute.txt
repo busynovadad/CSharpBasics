@@ -11,3 +11,16 @@ C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Win\obj\Debug\Acme.
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.csproj.GenerateResource.Cache
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.exe
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Win.exe.config
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Win.exe
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Win.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Biz.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Common.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Biz.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\bin\Debug\Acme.Common.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.csprojResolveAssemblyReference.cache
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.Properties.Resources.resources
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.VendorWin.resources
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.csproj.GenerateResource.Cache
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.exe
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Win\obj\Debug\Acme.Win.pdb

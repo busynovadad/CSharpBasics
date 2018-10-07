@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Wpf\obj\Debug\
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Wpf\obj\Debug\
 Acme.Wpf
 none
 false
 DEBUG;TRACE
-C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Wpf\App.xaml
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Wpf\App.xaml
 315270850
 
 111639953371
-141679475861
+14200397701
 Assets\StyleLibrary.xaml;MainWindow.xaml;Views\VendorDetailView.xaml;
 
-True
+False
 

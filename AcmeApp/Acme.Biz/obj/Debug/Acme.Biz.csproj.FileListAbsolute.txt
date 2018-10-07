@@ -5,3 +5,10 @@ C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Biz\bin\Debug\Acme.
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csprojResolveAssemblyReference.cache
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.dll
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csprojResolveAssemblyReference.cache
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.pdb

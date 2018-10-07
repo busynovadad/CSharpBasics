@@ -8,3 +8,13 @@ C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Tests\Acme.BizTests\bin\
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.csprojResolveAssemblyReference.cache
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.dll
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.BizTests.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.BizTests.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.Biz.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.Common.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.Biz.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\bin\Debug\Acme.Common.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.csprojResolveAssemblyReference.cache
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.pdb
