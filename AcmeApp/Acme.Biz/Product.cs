@@ -13,22 +13,40 @@ namespace Acme.Biz
     /// </summary>
     public class Product
     {
+        public const double InchesPerMeter = 39.37;
+        public readonly decimal MinimumPrice;
+        #region Constructors
         public Product()
         {
             //this.ProductVendor = new Vendor();
             Console.WriteLine("Product instance created");
+            this.MinimumPrice = .96m;
         }
 
         public Product(int productId
             , string productName
-            , string description):this()
+            , string description) : this()
         {
             this.ProductId = productId;
             this.ProductName = productName;
             this.Description = description;
-
+            if (ProductName.StartsWith("Bulk"))
+            {
+                this.MinimumPrice = 9.99m;
+            }
             Console.WriteLine("Product instance has a name: " + ProductName);
         }
+        #endregion
+
+        #region Properties
+        private DateTime? availabilityDate;
+
+        public DateTime? AvailabilityDate
+        {
+            get { return availabilityDate; }
+            set { availabilityDate = value; }
+        }
+
 
         private string productName;
 
@@ -58,7 +76,8 @@ namespace Acme.Biz
 
         public Vendor ProductVendor
         {
-            get {
+            get
+            {
                 if (productVendor == null)
                 {
                     productVendor = new Vendor();
@@ -66,7 +85,8 @@ namespace Acme.Biz
                 return productVendor;
             }
             set { productVendor = value; }
-        }
+        } 
+        #endregion
 
         public string SayHello()
         {
@@ -77,8 +97,13 @@ namespace Acme.Biz
             var confirmation = emailService.SendMessage("New Product", this.productName, "sales@abc.com");
 
             var result = LogAction("saying Hello");
+            //this.MinimumPrice = 123m;
 
-            return "Hello " + ProductName + " (" + ProductId + "): " + Description;
+            return "Hello " + ProductName + 
+                " (" + ProductId + "): " + 
+                Description +
+                " Available on: " +
+                AvailabilityDate?.ToShortDateString();
         }
 
 
