@@ -3,3 +3,8 @@ C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Common\bin\Debug\Ac
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.csprojResolveAssemblyReference.cache
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.dll
 C:\Users\bmcku\Documents\GitHub\CSharpBP-Basics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Common\bin\Debug\Acme.Common.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Common\bin\Debug\Acme.Common.pdb
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.csprojResolveAssemblyReference.cache
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.dll
+C:\Users\bmcku\Documents\GitHub\CSharpBasics\AcmeApp\Acme.Common\obj\Debug\Acme.Common.pdb

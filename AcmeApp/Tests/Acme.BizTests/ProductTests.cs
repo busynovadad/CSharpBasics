@@ -98,10 +98,25 @@ namespace Acme.Biz.Tests
         public void MinimumPriceTest_Default()
         {
             // Arrange
-            var expected = 78.74;
+            var currentProduct = new Product();
+            var expected = .96m;
 
             // Act
-            var actual = 2 * Product.InchesPerMeter;
+            var actual = currentProduct.MinimumPrice;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void MinimumPriceTest_Bulk()
+        {
+            // Arrange
+            var currentProduct = new Product(1, "Bulk","Bulk");
+            var expected = 9.99m;
+
+            // Act
+            var actual = currentProduct.MinimumPrice;
 
             // Assert
             Assert.AreEqual(expected, actual);
