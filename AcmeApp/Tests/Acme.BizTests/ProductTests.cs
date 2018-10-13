@@ -121,6 +121,113 @@ namespace Acme.Biz.Tests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod()]
+        public void ProductName_Format()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            currentProduct.ProductName = "    Steel Hammer    ";
+            var expected = "Steel Hammer";
+
+            // Act
+            var actual = currentProduct.ProductName;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void ProductName_JustRight()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            currentProduct.ProductName = "Saw";
+            string expected = "Saw";
+            string expectedMessage = null;
+
+            // Act
+            var actual = currentProduct.ProductName;
+            var actualMessage = currentProduct.ValidationMessage;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expectedMessage, actualMessage);
+        }
+
+        [TestMethod()]
+        public void Category_DefaultValue()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            var expected = "Tools";
+
+            // Act
+            var actual = currentProduct.category;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void Category_NewValue()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            currentProduct.category = "Garden";
+            var expected = "Garden";
+
+            // Act
+            var actual = currentProduct.category;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void Sequence_DefaultValue()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            var expected = 1;
+
+            // Act
+            var actual = currentProduct.SequenceNumber;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void Sequence_NewValue()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            currentProduct.SequenceNumber = 5;
+            var expected = 5;
+
+            // Act
+            var actual = currentProduct.SequenceNumber;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void ProductCode_DefaultValue()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            var expected = "Tools-1";
+
+            // Act
+            var actual = currentProduct.ProductCode;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
     }
 }
 
