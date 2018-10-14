@@ -112,7 +112,7 @@ namespace Acme.Biz.Tests
         public void MinimumPriceTest_Bulk()
         {
             // Arrange
-            var currentProduct = new Product(1, "Bulk","Bulk");
+            var currentProduct = new Product(1, "Bulk", "Bulk");
             var expected = 9.99m;
 
             // Act
@@ -227,7 +227,26 @@ namespace Acme.Biz.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod()]
+        public void CalculateSuggestedPriceTest()
+        {
+            // Arrange
+            var currentProduct = new Product();
+            var expected = 110;
 
+            // Act
+            currentProduct.Cost = 100;
+            var actual = currentProduct.CalculateSuggestedPrice(10);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        //[TestMethod()]
+        //public void ToStringTest()
+        //{
+        //    Assert.Fail();
+        //}
     }
 }
 

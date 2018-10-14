@@ -110,6 +110,7 @@ namespace Acme.Biz
         public string ProductCode => this.category + "-" + this.SequenceNumber;
 
         public string ValidationMessage { get; private set; }
+        public decimal Cost { get; set; }
         #endregion
 
         public string SayHello()
@@ -130,6 +131,17 @@ namespace Acme.Biz
                 AvailabilityDate?.ToShortDateString();
         }
 
+        public override string ToString()
+        {
+            return this.ProductName + "(" + this.productId + ")";
+        }
 
+        /// <summary>
+        /// Calculates the suggested retail price
+        /// </summary>
+        /// <param name="markupPercent">Percent used to mark up the cost.</param>
+        /// <returns></returns>
+        public decimal CalculateSuggestedPrice(decimal markupPercent) =>
+            this.Cost + (this.Cost * markupPercent / 100);
     }
 }
