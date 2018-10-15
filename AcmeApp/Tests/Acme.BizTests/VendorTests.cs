@@ -64,7 +64,7 @@ namespace Acme.Biz.Tests
             var vendor = new Vendor();
             var product = new Product(1, "Saw", "");
             var expected = new OperationResult(true,
-                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12");
+                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12\r\nInstructions: standard delivery");
 
             // Act
             var actual = vendor.PlaceOrder(product, 12);
@@ -106,7 +106,7 @@ namespace Acme.Biz.Tests
             var product = new Product(1, "Saw", "");
             var expected = new OperationResult(true,
                 "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12" +
-                "\r\nDelivery By: 10/25/2015");
+                "\r\nDelivery By: 10/25/2015\r\nInstructions: standard delivery");
 
             // Act
             var mydate = new DateTimeOffset(2015, 10, 25, 0, 0, 0, new TimeSpan(-7, 0, 0));
@@ -143,8 +143,35 @@ namespace Acme.Biz.Tests
             Assert.AreEqual(expected.Message, actual.Message);
         }
 
+        [TestMethod()]
+        public void PlaceOrderTest_WithAddress()
+        {
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true, "Test With Address");
 
+            var actual = vendor.PlaceOrder(product
+                , 12
+                , Vendor.IncludeAddress.Yes
+                , Vendor.SendCopy.No);
 
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
 
+        }
+
+        [TestMethod]
+        public void PlaceOrder_NoDeliveryDate()
+        {
+            var vendor = new Vendor();
+            var product = new Product(1, "Saw", "");
+            var expected = new OperationResult(true,
+                "Order from Acme, Inc\r\nProduct: Tools-1\r\nQuantity: 12" +
+                "\r\nInstructions: Deliver to suite 42");
+            var actual = vendor.PlaceOrder(product, 12, instructions: "Deliver to suite 42");
+            Assert.AreEqual(expected.Success, actual.Success);
+            Assert.AreEqual(expected.Message, actual.Message);
+
+        }
     }
 }

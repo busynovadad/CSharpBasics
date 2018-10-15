@@ -16,6 +16,10 @@ namespace Acme.Biz
         public string CompanyName { get; set; }
         public string Email { get; set; }
 
+        public enum IncludeAddress { Yes, No };
+        public enum SendCopy { Yes, No };
+
+        /*
         /// <summary>
         /// Sends a product order to the vendor.
         /// </summary>
@@ -40,7 +44,7 @@ namespace Acme.Biz
         {
             return PlaceOrder(product, quantity, deliverBy, null);
         }
-
+        */
 
         /// <summary>
         /// Sends a product order to the vendor.
@@ -51,8 +55,8 @@ namespace Acme.Biz
         /// <param name="instructions">Instructions specific to the order.</param>
         /// <returns></returns>
         public OperationResult PlaceOrder(Product product, int quantity,
-            DateTimeOffset? deliverBy,
-            string instructions)
+            DateTimeOffset? deliverBy = null,
+            string instructions = "standard delivery")
         {
             if (product == null)
                 throw new ArgumentNullException(nameof(Product));
@@ -88,6 +92,16 @@ namespace Acme.Biz
             return operationResult;
         }
 
+        public OperationResult PlaceOrder(Product product, int quantity, 
+            IncludeAddress includeAddress, SendCopy sendCopy)
+        {
+            var orderText = "Test";
+            if (includeAddress == IncludeAddress.Yes) orderText += " With Address";
+            if (sendCopy == SendCopy.Yes) orderText += " With Copy";
+
+            var operationResult = new OperationResult(true, orderText);
+            return operationResult;
+        }
 
         /// <summary>
         /// Sends an email to welcome a new vendor.
