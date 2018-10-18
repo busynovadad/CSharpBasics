@@ -68,9 +68,9 @@ namespace Acme.Biz
                 {
                     ValidationMessage = "Product Name cannot be more than 20 characters";
                 }
-                else { 
-                productName = value;
-            }
+                else {
+                    productName = value;
+                }
             }
         }
 
@@ -105,9 +105,14 @@ namespace Acme.Biz
             set { productVendor = value; }
         }
 
-        internal string category {  get; set; }
+        internal string category { get; set; }
         public int SequenceNumber { get; set; } = 1;
-        public string ProductCode => this.category + "-" + this.SequenceNumber;
+
+        //public string ProductCode => this.category + "-" + this.SequenceNumber;
+        //public string ProductCode => String.Format("{0}-{1:0000}"
+        //    , this.category
+        //    , this.SequenceNumber);
+        public string ProductCode => $"{this.category }-{this.SequenceNumber:0000}";
 
         public string ValidationMessage { get; private set; }
         public decimal Cost { get; set; }

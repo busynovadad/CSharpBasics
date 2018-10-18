@@ -116,5 +116,32 @@ namespace Acme.Biz
                                                         this.Email);
             return confirmation;
         }
+
+        public override string ToString()
+        {
+            //string vendorInfo = "Vendor: " + this.CompanyName;
+            string vendorInfo = null;
+            string result;
+            //if (!String.IsNullOrWhiteSpace(vendorInfo))
+            //{
+                result = vendorInfo?.ToLower();
+                result = vendorInfo?.ToUpper();
+                result = vendorInfo?.Replace("Vendor", "Supplier");
+
+                var length = vendorInfo?.Length;
+                var index = vendorInfo?.IndexOf(":");
+                var begins = vendorInfo?.StartsWith("Vendor");
+            //}
+
+            return vendorInfo;
+        }
+
+        public string PrepareDirections()
+        {
+            var directions = "Insert \r\n to define a new line";
+            return directions;
+        }
+
+
     }
 }
